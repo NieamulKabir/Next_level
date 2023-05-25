@@ -33,3 +33,14 @@ const person2:{
     }
 }
 
+
+//spread operator
+const myFriends=['jodu','modu','kodu'];
+const newFriend=['Kabir','Nieamul','Afra'];
+
+myFriends.push(...newFriend);
+
+//rest parameter
+const greetFriends=(...friends:string[]):void=>friends.forEach((friend)=>console.log(`Hi ${friend}`));
+
+greetFriends("habiba","Rubia","Ekram");
