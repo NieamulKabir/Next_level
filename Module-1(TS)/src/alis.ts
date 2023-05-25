@@ -19,9 +19,7 @@ const crush2: CrushType = {
 }
 
 type OperationType =(x:number,y:number)=>number
-const calculate = (number1: number, number2: number, operation: OperationType => {
-    return operation(number1, number2);
-}
+const calculate = (number1: number, number2: number, operation: OperationType) => operation(number1, number2);
 calculate(20, 20, (x, y) => x + y);
 calculate(20, 20, (x, y) => x - y);
 calculate(20, 20, (x, y) => x * y);
