@@ -1,0 +1,1 @@
+const rollNumbers10: number[]=[44,12,4]
