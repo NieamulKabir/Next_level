@@ -25,6 +25,10 @@ const relation: GenericTupel<string, string> = ['Kabir', 'kasfia'];
 
 
 type RelationWIthSalaryType = { name: string, salary: number };
+interface RelationWIthSalaryInterface {
+    name: string,
+    salary: number
+}
 const relationWithSalary: GenericTupel<RelationWIthSalaryType, string> = [
     {
         name: "Nieamul",
