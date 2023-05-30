@@ -1,3 +1,5 @@
+
+
 type MyInfoType = {
     name: string;
     age: number;
