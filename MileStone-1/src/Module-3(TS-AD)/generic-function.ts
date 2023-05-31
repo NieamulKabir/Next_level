@@ -32,9 +32,52 @@ const myInfo = {
 
 const addMeInMyCrushMine = <T>(myInfo: T) => {
     const crush = "kashfia";
-    const newData = {...myInfo, crush };
+    const newData = { ...myInfo, crush };
     return newData;
 }
 
 const result6 = addMeInMyCrushMine(myInfo)
 console.log(result6);
+
+function getArrayItem<T, K extends keyof T>(arr: T[], index: number, key: K): T[K] {
+
+    const item = arr[index];
+
+    return item[key];
+
+}
+
+
+const users100 = [{ name: 'John', age: 30 }, { name: 'Mary', age: 25 },];
+
+console.log(getArrayItem(users100, 0, 'name'))
+
+
+// type Data = { num11: number }
+// type B = {
+//   [key in keyof Data]: string;
+
+// }
+
+// const numbers:B = {
+
+//   num11: 20
+
+// }
+
+interface Person {
+
+    firstName: string;
+  
+    lastName: string;
+  
+  }
+  
+
+  function fullName<T extends Person>(person: T): string {
+  
+    return `${person.firstName} ${person.lastName}`;
+  
+  }
+  
+  
