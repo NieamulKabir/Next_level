@@ -65,19 +65,19 @@ console.log(getArrayItem(users100, 0, 'name'))
 
 // }
 
-interface Person {
+// interface Person {
 
-    firstName: string;
+//     firstName: string;
   
-    lastName: string;
+//     lastName: string;
   
-  }
+//   }
   
 
-  function fullName<T extends Person>(person: T): string {
+//   function fullName<T extends Person>(person: T): string {
   
-    return `${person.firstName} ${person.lastName}`;
+//     return `${person.firstName} ${person.lastName}`;
   
-  }
+//   }
   
   
