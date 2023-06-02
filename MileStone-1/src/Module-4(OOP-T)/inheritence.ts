@@ -27,3 +27,4 @@ class Teacher extends Person{
 };
 
 const teacher= new Teacher("Nieamul",25,"Mirpur","teacher");
+ 
