@@ -8,6 +8,8 @@ class BankAccount {
         this.name = name;
         this._balance = balance;
     };
+
+    
     //getter
     get balance(): number {
         return this._balance;
@@ -16,6 +18,8 @@ class BankAccount {
     set Deposit(amount: number) {
          this._balance = this._balance + amount;
     }
+
+
     getBAlance() {
         console.log(`My current balance is ${this._balance}`);
     };
