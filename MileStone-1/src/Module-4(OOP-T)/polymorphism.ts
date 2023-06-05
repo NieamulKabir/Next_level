@@ -64,5 +64,5 @@ function getAreaOfShape(param:Shape){
     console.log(param.getArea());
 }
 
-getAreaOfShape(new Circle(1));
+getAreaOfShape(new Circle(10));
 getAreaOfShape(new Rectangle(10,10))
