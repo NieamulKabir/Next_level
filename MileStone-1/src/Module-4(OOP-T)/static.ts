@@ -13,4 +13,4 @@ class Counter {
 // const instance2 = new Counter();
 
 console.log(Counter.increment());
-console.log(Counter.increment());
+console.log(Counter.increment()); 
